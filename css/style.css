@@ -1,33 +1,40 @@
 * {
-    box-sizing: border-box; /* border size에 관계없이 동일한 사이즈를 가질 수 있도록 설정 */
+    box-sizing: border-box;
+    /* border size에 관계없이 동일한 사이즈를 가질 수 있도록 설정 */
 }
 
 body {
-    margin: 0 auto; /* 가운데 정렬 */
+    margin: 0 auto;
+    /* 가운데 정렬 */
     color: #3f464d;
     font-family: "Spoqa Han Sans Neo", "Sans-serif";
 }
 
-a { /* a 태그 링크 스타일 초기화 */
+a {
+    /* a 태그 링크 스타일 초기화 */
     all: unset;
 }
 
-a:link { /* 링크가 걸려있을 때 */
+a:link {
+    /* 링크가 걸려있을 때 */
     text-decoration: none;
     color: #3f464d;
 }
 
-a:visited { /* 방문했을 때 */
+a:visited {
+    /* 방문했을 때 */
     text-decoration: none;
     color: #3f464d;
 }
 
-a:active { /* 클릭했을 때 */
+a:active {
+    /* 클릭했을 때 */
     text-decoration: none;
     color: #3f464d;
 }
 
-a:hover { /* 마우스를 올렸을 때 */
+a:hover {
+    /* 마우스를 올렸을 때 */
     text-decoration: none;
     color: #3f464d;
 }
@@ -47,7 +54,8 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1000; /* 다른 요소들보다 위에 보이도록 */
+    z-index: 1000;
+    /* 다른 요소들보다 위에 보이도록 */
 }
 
 .head-container {
@@ -90,7 +98,7 @@ section {
     background-repeat: no-repeat;
     background-position: center bottom -80px;
     background-size: contain;
-    z-index: 1;   
+    z-index: 1;
 }
 
 .main-container {
@@ -197,7 +205,7 @@ section {
 .roadmap-title {
     font-size: 1.3rem;
     font-weight: bold;
-    color:#545e6f;
+    color: #545e6f;
 }
 
 .slide-prev {
@@ -216,7 +224,7 @@ section {
     display: flex;
 }
 
-.class-list {   
+.class-list {
     display: flex;
     list-style: none;
     padding: 1rem 0;
@@ -345,8 +353,8 @@ footer {
 #backtotop.show:hover {
     cursor: pointer;
     background-color: #2186c4;
-  }
-  
+}
+
 
 #backtotop.show {
     opacity: 1;
@@ -354,13 +362,18 @@ footer {
     background-color: rgb(47, 48, 89);
 }
 
-@media only screen and (min-width: 1200px) { /* 1200px 이상일 때 */
+@media only screen and (min-width: 1200px) {
+
+    /* 1200px 이상일 때 */
     .inner {
-        max-width: 1200px; /* 최대 1200px로 지정 */
+        max-width: 1200px;
+        /* 최대 1200px로 지정 */
     }
 }
 
-@media only screen and (max-width: 885px) { /* 980px 이하일 때*/
+@media only screen and (max-width: 885px) {
+
+    /* 980px 이하일 때*/
     .skill-container {
         display: none;
     }
