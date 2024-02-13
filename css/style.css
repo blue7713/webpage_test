@@ -1,0 +1,371 @@
+* {
+    box-sizing: border-box; /* border size에 관계없이 동일한 사이즈를 가질 수 있도록 설정 */
+}
+
+body {
+    margin: 0 auto; /* 가운데 정렬 */
+    color: #3f464d;
+    font-family: "Spoqa Han Sans Neo", "Sans-serif";
+}
+
+a { /* a 태그 링크 스타일 초기화 */
+    all: unset;
+}
+
+a:link { /* 링크가 걸려있을 때 */
+    text-decoration: none;
+    color: #3f464d;
+}
+
+a:visited { /* 방문했을 때 */
+    text-decoration: none;
+    color: #3f464d;
+}
+
+a:active { /* 클릭했을 때 */
+    text-decoration: none;
+    color: #3f464d;
+}
+
+a:hover { /* 마우스를 올렸을 때 */
+    text-decoration: none;
+    color: #3f464d;
+}
+
+.inner {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 2rem;
+    overflow: hidden;
+}
+
+header {
+    width: 100%;
+    height: 60px;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* 다른 요소들보다 위에 보이도록 */
+}
+
+.head-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.head-container .head-brand {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.head-container .head-brand a:hover {
+    color: #2186c4;
+    cursor: pointer;
+}
+
+.head-container .head-blog {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.head-container .head-blog a:hover {
+    color: #2186c4;
+    cursor: pointer;
+}
+
+section {
+    width: 100%;
+    background-color: #ffffff;
+    position: relative;
+}
+
+.main {
+    height: 250px;
+    background-image: url("../img/fun-coding-mark.png");
+    background-repeat: no-repeat;
+    background-position: center bottom -80px;
+    background-size: contain;
+    z-index: 1;   
+}
+
+.main-container {
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    z-index: 2;
+    margin-top: 60px;
+}
+
+.title-container {
+    padding-top: 8px;
+    padding-bottom: 100px;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2186c4;
+    margin-bottom: 0.5rem;
+}
+
+.message {
+    font-size: 1.4rem;
+    font-weight: normal;
+    line-height: 2rem;
+}
+
+.skill-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.skill {
+    width: 25%;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    border-radius: 9px;
+    padding: 0.5rem 1rem;
+    margin: 0 1rem;
+    box-shadow: 10px 10px 10px -5px rgba(25, 42, 70, 0.2);
+    transition: 0.4s;
+}
+
+.skill:hover {
+    transform: translate(0, -5px);
+}
+
+.skill-icon {
+    font-size: 2.5rem;
+    margin: 7px;
+}
+
+.skill-title {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.skill-name {
+    font-weight: bold;
+    color: #545e6f;
+    margin-bottom: 0.2rem;
+}
+
+.skill-usage {
+    font-weight: bold;
+    color: #545e6f;
+}
+
+.python-style {
+    color: #2186c4;
+}
+
+.analysis-style {
+    color: #ff8066;
+}
+
+.ai-style {
+    color: #f7df1e;
+}
+
+.vue-style {
+    color: #2e7d32;
+}
+
+.roadmap-container {
+    width: 100%;
+    margin-top: 1.5rem;
+}
+
+.roadmap-title-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.roadmap-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color:#545e6f;
+}
+
+.slide-prev {
+    font-size: 2rem;
+    cursor: pointer;
+    color: rgb(47, 48, 89)
+}
+
+.slide-next {
+    font-size: 2rem;
+    cursor: pointer;
+    color: #cfd8dc
+}
+
+.arrow-container {
+    display: flex;
+}
+
+.class-list {   
+    display: flex;
+    list-style: none;
+    padding: 1rem 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.class-card {
+    max-width: 240px;
+    box-shadow: 10px 10px 10px -5px rgba(25, 42, 70, 0.2);
+    border-radius: 8px;
+    margin: 0 10px;
+    transition: 0.4s;
+    flex-shrink: 0;
+}
+
+.class-card:hover {
+    box-shadow: 10px 10px 10px -5px rgba(25, 42, 70, 0.2);
+    transform: translate(0, -5px);
+}
+
+.class-image {
+    max-width: 240px;
+    border-radius: 8px 8px 0 0;
+}
+
+.class-container {
+    width: 100%;
+    padding: 0.5rem 1rem 1rem 1rem;
+}
+
+.class-skill {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.class-type {
+    font-size: 0.9rem;
+    color: #949393;
+}
+
+.class-format {
+    font-size: 0.9rem;
+    color: #ffffff;
+    background-color: #0d47a1;
+    padding: 0.2rem;
+}
+
+.class-desc {
+    width: 100%;
+    margin-top: 0.5rem;
+}
+
+.class-title {
+    font-weight: bold;
+    color: #545e6f;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 0.3rem;
+}
+
+.class-detail {
+    font-size: 0.9rem;
+    color: #545e6f;
+    line-height: 1.5rem;
+}
+
+li a:hover {
+    cursor: pointer;
+}
+
+footer {
+    border-top: 1px solid #e4e4e4;
+    background-color: #f8f9fa;
+    padding: 1rem 0;
+    margin: 0.3rem 0;
+}
+
+.footer-message {
+    font-weight: bold;
+    color: #545e6f;
+    margin-bottom: 0.4rem 0.5rem;
+}
+
+.footer-contact {
+    color: #545e6f;
+    margin-bottom: 0 0.5rem;
+}
+
+.footer-copyright {
+    color: #545e6f;
+    margin-top: 0.5rem;
+}
+
+#backtotop {
+    background-color: rgb(47, 48, 89);
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border-radius: 20px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition-property: background-color, opacity, visibility;
+    transition-duration: 0.3s, 0.5s, 0.5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 999;
+}
+
+/* 아이콘 적용 방법
+    1. ::after (요소 뒤에 content 추가) 가상 요소에서,
+    2. content: "폰트어썸 유니코드" 를 넣고,
+    3. font-family: FontAwesome 이라고 넣으면 됨*/
+#backtotop::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-size: 1.5rem;
+    line-height: 40px;
+    color: #ffffff;
+}
+
+#backtotop.show:hover {
+    cursor: pointer;
+    background-color: #2186c4;
+  }
+  
+
+#backtotop.show {
+    opacity: 1;
+    visibility: visible;
+    background-color: rgb(47, 48, 89);
+}
+
+@media only screen and (min-width: 1200px) { /* 1200px 이상일 때 */
+    .inner {
+        max-width: 1200px; /* 최대 1200px로 지정 */
+    }
+}
+
+@media only screen and (max-width: 885px) { /* 980px 이하일 때*/
+    .skill-container {
+        display: none;
+    }
+
+    .roadmap-desc {
+        display: none;
+    }
+}
